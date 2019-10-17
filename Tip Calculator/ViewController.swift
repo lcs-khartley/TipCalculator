@@ -36,9 +36,10 @@ class ViewController: UIViewController {
         
         let calculatePerPerson = calculateTip/numberOfPeopleDecimal
         
-        tipTotal.text = String(calculateTip)
+        //tipTotal.text = String(calculateTip)
+        tipTotal.text = String(format: "$%.2f", calculateTip)
         
-        tipPerPerson.text = String(calculatePerPerson)
+        tipPerPerson.text = String(format: "$%.2f", calculatePerPerson)
         
     }
     
